@@ -1,0 +1,734 @@
+/* Reset CSS */
+
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 16px;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+	
+	img{
+		max-width: 100%;
+	}
+	
+	html p, 
+	html span,
+	html li,
+	html h1,
+	html h2,
+	html h3,
+	html h4,
+	html a {
+		font-family: 'Roboto', sans-serif;
+		color: #101010;
+	}
+	
+	input:-webkit-autofill,
+	input:-webkit-autofill:hover, 
+	input:-webkit-autofill:focus,
+	textarea:-webkit-autofill,
+	textarea:-webkit-autofill:hover,
+	textarea:-webkit-autofill:focus,
+	select:-webkit-autofill,
+	select:-webkit-autofill:hover,
+	select:-webkit-autofill:focus {
+		-webkit-box-shadow: 0 0 0px 1000px transparent inset;
+		transition: background-color 5000s ease-in-out 0s;
+	}
+
+/* 
+General
+*
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap')
+
+html{scroll-behavior:smooth}
+
+body {
+	background-color: #101010;
+}
+
+.height-100 {
+	height: 100%;
+}
+
+.ghost-text {
+	display: block;
+	margin: 5px 0;
+	padding: 2px;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	font-weight: 300;
+	color: #FFF;
+	background: #101010;
+}
+
+.sick {
+	color: #ffd900;
+	font-weight: 500;
+}
+
+.easy-eyes {
+	display: inline-block;
+	margin: 5px 0;
+	padding: 2px;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	font-weight: 300;
+	background-color: #310D23;
+	color: #FFF;
+}
+
+/* Highlights */
+
+.m-light {
+	font-size: 1.8rem;
+	line-height: 1rem;
+	font-weight: 300;
+}
+
+.l-normal {
+	font-size: 3rem;
+	font-weight: 500;
+}
+
+.text-highlight {
+	background-color: #E75778;
+	color: #101010;
+	font-weight: 500;
+}
+
+/* Titles */ 
+
+h2,
+.h2 {
+	margin-top: 10px;
+	font-size: 2rem;
+}
+
+h3,
+.h3 {
+	margin-top: 10px;
+	font-size: 2rem;
+}
+
+h4,
+.h4 {
+	margin-top: 10px;
+	font-size: 1.4rem;
+}
+
+.title-highlight-dm {
+	display: inline-block;
+	margin-bottom: 10px;
+	padding-right: 15px;
+	background-color: #ffd900;
+	font-weight: 500;
+	font-family: "Pixelify Sans", sans-serif;
+}
+
+.title-highlight {
+	display: inline-block;
+	margin-bottom: 10px;
+	padding: 0 15px;
+	background-color: #310D23;
+	color: #FFF;
+	font-weight: 500;
+	font-family: "Pixelify Sans", sans-serif;
+}
+
+/* Menu */
+
+.menu {
+	margin: 20px 0;
+}
+
+.menu-row .logo-container a {
+	max-width: 100%;
+	display: block;
+}
+
+.menu-items {
+	list-style: none;
+}
+
+.menu li {
+	display: inline-block;
+	margin: 0 10px;
+	padding: 5px 10px;
+	background-color: #E75778;
+}
+
+.menu li:hover {
+	cursor: pointer;
+	background-color: #FFD900;
+}
+
+.menu li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: "Pixelify Sans", sans-serif;
+	font-size: 1.3rem;
+	font-weight: 500;
+	color: #101010;
+	-webkit-transition: all 0.25s;
+	-o-transition: all 0.25s;
+	transition: all 0.25s;
+}
+
+
+@media only screen and (max-width: 800px) {
+	.menu li {
+		display: block;
+		margin-bottom: 5px;
+	}
+}
+
+
+/* 
+Landing page 
+*
+*
+*
+*/
+
+/* Main Jumbotron */
+
+@keyframes changeBackground {
+    0% { background-image: url("../img/backgrounds/main_bg_1.png"); }
+    33.33% { background-image: url("../img/backgrounds/main_bg_2.png"); }
+    66.66% { background-image: url("../img/backgrounds/main_bg_3.png"); }
+    100% { background-image: url("../img/backgrounds/main_bg_1.png"); } /* Back to the first image */
+}
+
+#home {
+	height: 600px;
+	padding: 50px;
+	animation: changeBackground 2s infinite;
+	background-image: url(../img/backgrounds/main_bg_1.png);
+	background-repeat: repeat;
+	background-position: center;
+}
+
+#home .menu li {
+	background-color: transparent;
+	color: #FFF;
+}
+
+#home .menu li a {
+	color: #FFF;
+}
+
+#home .menu li:hover a {
+	color: #E75778;
+}
+
+
+/* Presentation */
+
+.presentation-row {
+	padding: 60px 0;
+}
+
+.cover-name {
+	font-size: 12rem;
+	font-weight: 700;
+	font-family: "Pixelify Sans", sans-serif;
+	color: #FFF;
+}
+
+.name-highlight {
+	display: inline-block;
+	padding: 0 40px;
+	font-family: "Pixelify Sans", sans-serif;
+	text-transform: uppercase;
+	background-color: #e75778;
+	color: #FFF;
+	font-size: 2rem;
+	font-weight: 400;
+}
+
+
+@media only screen and (max-width: 1024px) {
+	.cover-name {
+		font-size: 5rem;
+	}
+
+	.name-highlight {
+		font-size: 1.2rem;
+	}
+}
+
+
+
+/* About me */
+
+#aboutme {
+	padding: 100px 0 0;
+}
+
+.fespi-picture {
+	max-width: 100%;
+}
+
+
+/* Projects */
+
+#projects {
+	padding: 100px 0;
+	background-color: #101010;
+}
+
+.project-row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100vw;
+}
+
+.project-content,
+.project-content-large {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: center;
+	background-color: transparent;
+	background-size: cover;
+	background-position: bottom center;
+	text-decoration: none;
+}
+
+.project-content-large {
+	background-position: center center;
+}
+
+.project-content:hover,
+.project-content-large:hover {
+	cursor: pointer;
+}
+
+.project-content {
+	width: 33.33vw;
+}
+
+#projectOne,
+#projectTwo,
+#projectThree {
+	display: inline-block;
+	position: relative;
+	width: 33.33%;
+}
+
+#projectFour {
+	height: 450px;
+	display: inline-block;
+	position: relative;
+	width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+
+	#projectOne,
+	#projectTwo,
+	#projectThree,
+	#projectFour {
+		height: 600px;
+	}
+
+}
+
+#projectOne:after,
+#projectTwo:after,
+#projectThree:after,
+#projectFour:after {
+	content: '';
+	display: block;
+	margin-top: 75%;
+}
+#projectOneContent,
+#projectTwoContent,
+#projectThreeContent,
+#projectFourContent {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	/* TRANSITION */
+	-webkit-transition: background 1s;
+	-moz-transition: background 1s;
+	-o-transition: background 1s;
+	transition: background 1s;
+}
+
+#projectOneContent,
+#projectTwoContent,
+#projectThreeContent,
+#projectFourContent {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	/* TRANSITION */
+	-webkit-transition: background 1s;
+	-moz-transition: background 1s;
+	-o-transition: background 1s;
+	transition: background 1s;
+}
+
+@media only screen and (max-width: 1024px) {
+	.project-row {
+		-webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+	.project-content,
+	.project-content-large {
+		width: 100vw;
+	}
+
+	#projectOne,
+	#projectTwo,
+	#projectThree,
+	#projectFour {
+		width: auto;
+	}
+}
+
+#projectOneContent {
+	background-image: url("../img/projects/thumbnails/design_systems_empty.png");
+}
+
+#projectOneContent:hover {
+	background-image: url("../img/projects/thumbnails/design_systems.png");
+}
+
+#projectTwoContent {
+	background-image: url("../img/projects/thumbnails/ss_platforms_empty.png");
+}
+
+#projectTwoContent:hover {
+	background-image: url("../img/projects/thumbnails/ss_platforms.png");
+}
+
+#projectThreeContent {
+	background-image: url("../img/projects/thumbnails/ai_projects_empty.png");
+}
+
+#projectThreeContent:hover {
+	background-image: url("../img/projects/thumbnails/ai_projects.png");
+}
+
+#projectFourContent {
+	background-image: url("../img/projects/thumbnails/other_projects_empty.png");
+}
+
+#projectFourContent:hover {
+	background-image: url("../img/projects/thumbnails/other_projects.png");
+}
+
+
+
+/* Contact */
+
+#contact {
+	padding: 150px 0;
+	background-position: center center;
+	background-image: url("../img/backgrounds/vending.png");
+}
+
+#contact .ghost-text {
+	display: inline-block;
+	padding: 2px 5px;
+	font-size: 1.2rem;
+}
+
+#contact .ghost-text .text-highlight {
+	padding: 2px 5px;
+}
+
+
+
+/* 
+Project
+*
+*/
+
+
+/* General */
+
+.header-project .menu li a:hover {
+	color: #ffd900;
+}
+
+.projects {
+	background-color: #101010;
+}
+
+.project-cover {
+	height: 500px;
+	background-size: cover;
+	background-position: center center;
+}
+
+.project-name {
+	display: inline-block;
+	margin-top: 200px;
+	padding: 0 30px;
+	font-size: 2rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	background-color: #ffd900;
+	color: #101010;
+	font-family: "Pixelify Sans", sans-serif;
+}
+
+@media only screen and (max-width: 1024px) {
+
+	.project-cover {
+		height: 600px;
+	}
+
+	.project-cover .menu {
+		padding-top: 50px;
+	}
+	
+	.project-name {
+		font-size: 1.4rem;
+	}
+}
+
+.project-description {
+	font-size: 1.2rem;
+	line-height: 1.6rem;
+	font-weight: 300;
+}
+
+.project-link {
+	margin-top: 5px;
+	padding: 5px 10px;
+	display: inline-block;
+	font-size: 1rem;
+	font-weight: 400;
+	background-color: #E75778;
+	color: #101010;
+	text-decoration: none;
+}
+
+.project-link:hover {
+	cursor: pointer;
+	color: #FFF;
+}
+
+.project-info {
+	padding: 100px;
+	background-image: url("../img/vhs.jpg");
+}
+
+.project-info-title {
+	display: inline-block;
+	margin-bottom: 10px;
+	padding: 0 20px;
+	font-size: 1.5rem;
+	font-weight: 600;
+	background-color: #E75778;
+	color: #101010;
+	font-family: "Pixelify Sans", sans-serif;
+}
+
+.project-image {
+	height: 700px;
+	background-position: left center;
+}
+
+@media only screen and (max-width: 1024px) {
+	.project-info {
+		padding: 50px 0;
+	}
+
+	.project-info .text-end,
+	.other-projects .text-end {
+		text-align: left!important;
+	}
+
+	.project-image {
+    height: 200px;
+    background-size: contain;
+	}
+}
+
+.project-data {
+	padding: 100px 0;
+}
+
+.project-data-title {
+	display: inline-block;
+	margin-bottom: 20px;
+	padding: 0 20px 0 10px;
+	font-size: 2rem;
+	font-weight: 400;
+	background-color: #E75778;
+	color: #101010;
+	font-family: "Pixelify Sans", sans-serif;
+}
+
+.project-block {
+	margin-bottom: 20px;
+}
+
+.project-data-subtitle {
+	display: inline-block;
+	margin-bottom: 10px;
+	padding: 0 20px 0 10px;
+	font-size: 1.5rem;
+	font-weight: 600;
+	background-color: #ffd900;
+	color: #101010;
+	font-family: "Pixelify Sans", sans-serif;
+}
+
+.project-goal-title {
+	display: inline-block;
+	margin-bottom: 10px;
+	padding-right: 20px;
+	font-size: 1.5rem;
+	font-weight: 600;
+	background-color: #ffd900;
+	color: #101010;
+}
+
+.project-goal,
+.project-users,
+.other-projects {
+	padding: 50px 0;
+}
+
+.goal-image {
+	height: 100%;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url("../img/target.png");
+}
+
+.users-image {
+	height: 100%;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url("../img/users.png");
+}
+
+.process-image {
+	height: 100%;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url("../img/process.png");
+}
+
+.process-title {
+	display: inline-block;
+	margin-bottom: 10px;
+	padding: 0 20px;
+	font-size: 1.5rem;
+	font-weight: 600;
+	background-color: #ffd900;
+	color: #101010;
+}
+
+
+/* Menu */
+
+.header-project .menu li a {
+	color: #fff;
+}
+
+/* Project one images */
+
+#projectOneCover {
+	background-image: url("../img/projects/projectone/design_systems.png");
+}
+
+#projectOneImage {
+	background-image: url("../img/projects/projectone/vision_image.png");
+}
+
+/* Project two images */
+
+#projectTwoCover {
+	background-image: url("../img/projects/projecttwo/ss_platforms.png");
+}
+
+#projectTwoImage {
+	background-image: url("../img/projects/projecttwo/platform_image.png");
+}
+
+#projectTwoImageBis {
+	background-image: url("../img/projects/projecttwo/airkit_platforms.png");
+}
+
+/* Project three images */
+
+#projectThreeCover {
+	background-image: url("../img/projects/projectthree/AI_projects.png");
+}
+
+#projectThreeImage {
+	background-image: url("../img/projects/projecttwo/airkit_platforms.png");
+}
+
+/* Project four images */
+
+#projectFourCover {
+	background-image: url("../img/projects/projectfour/other_projects.png");
+}
+
+#projectFourImage {
+	background-image: url("../img/projects/projectfour/other_mockup.png");
+}
+
+/* Utilities images */
+
+#utilitiesCover {
+	background-image: url("../img/projects/utilities/utilities.png");
+}
+
