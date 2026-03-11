@@ -11,155 +11,256 @@
 		<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>OHNO! Fespi</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
 		<h1 class="d-none">OHNO! Fespi</h1>
+		<div class="menu">
+			<div class="container">
+				<ul class="menu-items">
+					<li class="menu-item menu-home">
+						<a class="text-glow-tangerine" href="#">Fespi</a>
+					</li>
+					<li class="text-center menu-item menu-option">
+						<a href="#aboutme">About</a>
+					</li>
+					<li class="text-center menu-item menu-option">
+						<a href="#projects">Projects</a>
+					</li>
+					<li class="text-center menu-item menu-option">
+						<a href="#contact">Contact</a>
+					</li>
+					<li class="text-center menu-item menu-option">
+						<a href="utilities.html">Utilities</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<section id="home" class="landing-section">
+			<div class="crt-scanlines"></div>
+			<div class="container home-main">	
+				<div class="row justify-content-center">
+					<div class="col-12 col-lg-8 text-center">
+						<div class="cover-img pixel-border">
+							<img src="img/coverimg.png" alt="A retro computer">
+						</div>
+						<h2 class="d-none">Fespi UI/UX Product Designer</h2>
+						<div class="cover-info">
+							<p class="cover-name text-glow-tangerine">Fespi</p>
+							<p class="cover-title text-glow-amber">UI/UX Product Designer</p>
+							<p class="cover-text"><span class="animate-blink">▸</span> Crafting digital experiences, pixel by pixel</p>
+							<div class="cover-scroll animate-float"><p>▼ Scroll Down ▼</p></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="aboutme" class="landing-section">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 col-lg-10 text-center">
+						<div class="section-title">
+							<span class="title-number">01.</span>
+							<h2 class="title-name text-glow-tangerine">About_me</h2>
+							<div class="title-border"></div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row justify-content-center">
+					<div class="col-12 col-md-7">
+						<div class="pixel-border about-text">
+							<p class="intro">Hey! I'm <span class="name">Fespi</span>, a UI/UX Product Designer based in Buenos Aires, Argentina. I think great design is a lot like a good game: intuitive, engaging, and satisfying to use.</p>
+
+							<p>I have 15+ years of experience designing digital products for companies around the world, across both <span class="highlight">B2B and B2C platforms</span>. I enjoy turning complex ideas into simple, usable products.</p>
+
+							<p>When I start a project, the first question I ask is <span class="highlight">who are our users?</span> Understanding how people interact with a product guides my decisions.</p>
+
+							<p>I started as a <span class="highlight">frontend developer</span>, which helps me bridge the gap between design and implementation. I see design as a team sport and enjoy working closely with developers and product teams.</p>
+
+							<p>You can say I’m a big design nerd, inspired by art, movies, video games, and board games.</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-3">
+						<div class="pixel-border-amber about-img">
+							<img src="img/fespi.png" alt="Fespi as a pixelart character">
+						</div>
+						<div class="pixel-border about-xp">
+							<span class="xp-title">XP</span>
+							<span class="xp-data">15+</span>
+						</div>
+
+						<div class="pixel-border about-skills">
+							<span class="skills-title">Skills</span>
+							<p>Figma, Design Systems, Prototyping, UI, User Research, B2B, B2C</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="projects" class="landing-section">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 col-lg-10 text-center">
+						<div class="section-title">
+							<span class="title-number">02.</span>
+							<h2 class="title-name text-glow-tangerine">Projects</h2>
+							<div class="title-border"></div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row justify-content-center">
+					<div class="col-12 col-lg-10">
+						<p class="projects-intro">Select a category to explore my work. Each quest holds unique challenges and solutions.</p>
+
+						<div class="projects-list">
+							<div class="project-item pixel-border" tabindex="0">
+								<div class="project-title-container">
+									<div class="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layers w-6 h-6 icon-even"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"></path><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"></path><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"></path></svg>
+									</div>
+									<h3 class="project-title title-even">Design Systems</h3>
+								</div>
+								<p class="project-description">Scalable component libraries and design tokens</p>
+								<a class="enter-container" href="/projects/designSystems.html">
+									<span class="enter-text">Enter</span><span class="enter-icon animate-blink">▸</span>
+								</a>
+							</div>
+							<div class="project-item pixel-border-amber" tabindex="0">
+								<div class="project-title-container">
+									<div class="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-monitor w-6 h-6 icon-odd"><rect width="20" height="14" x="2" y="3" rx="2"></rect><line x1="8" x2="16" y1="21" y2="21"></line><line x1="12" x2="12" y1="17" y2="21"></line></svg>
+									</div>
+									<h3 class="project-title title-odd">Self-Service</h3>
+								</div>
+								<p class="project-description">Platforms empowering users to solve problems independently</p>
+								<a class="enter-container" href="projects/selfServicePlatforms.html">
+									<span class="enter-text">Enter</span><span class="enter-icon animate-blink">▸</span>
+								</a>
+							</div>
+							<div class="project-item pixel-border" tabindex="0">
+								<div class="project-title-container">
+									<div class="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cpu w-6 h-6 icon-even"><rect width="16" height="16" x="4" y="4" rx="2"></rect><rect width="6" height="6" x="9" y="9" rx="1"></rect><path d="M15 2v2"></path><path d="M15 20v2"></path><path d="M2 15h2"></path><path d="M2 9h2"></path><path d="M20 15h2"></path><path d="M20 9h2"></path><path d="M9 2v2"></path><path d="M9 20v2"></path></svg>
+									</div>
+									<h3 class="project-title title-even">AI Platforms</h3>
+								</div>
+								<p class="project-description">Intelligent interfaces powered by machine learning</p>
+								<a class="enter-container" href="projects/AIprojects.html">
+									<span class="enter-text">Enter</span><span class="enter-icon animate-blink">▸</span>
+								</a>
+							</div>
+							<div class="project-item pixel-border-amber" tabindex="0">
+								<div class="project-title-container">
+									<div class="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-folder w-6 h-6 icon-odd"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"></path></svg>
+									</div>
+									<h3 class="project-title title-odd">Other Projects</h3>
+								</div>
+								<p class="project-description">Diverse design work across various domains</p>
+								<a class="enter-container" href="projects/otherProjects.html">
+									<span class="enter-text">Enter</span><span class="enter-icon animate-blink">▸</span>
+								</a>
+							</div>
+							<div class="project-item pixel-border" tabindex="0">
+								<div class="project-title-container">
+									<div class="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wrench w-6 h-6 icon-even"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+									</div>
+									<h3 class="project-title title-even">Utilities</h3>
+								</div>
+								<p class="project-description">Simple tools that resolve ever-day problems</p>
+								<a class="enter-container" href="#">
+									<span class="enter-text">Enter</span><span class="enter-icon animate-blink">▸</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact" class="landing-section">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 col-lg-10 text-center">
+						<div class="section-title">
+							<span class="title-number">03.</span>
+							<h2 class="title-name text-glow-tangerine">Contact</h2>
+							<div class="title-border"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-12 col-lg-8 text-center">
+						<div class="pixel-border contact-container">
+							<h3 class="font-pixel contact-title text-glow-amber mb-4">Quest Available</h3>
+							<p class="contact-main">Got a project in mind?</p>
+							<p class="contact-sec">Let's team up and build something legendary.</p>
+
+							<div class="cover-scroll animate-float"><p>▼ Say Hello ▼</p></div>
+
+							<div class="socials-container">
+								<a href="mailto:hola@ohno.com.ar" class="social-item">
+									<div class="social-square">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+											<rect width="20" height="16" x="2" y="4" rx="2"></rect>
+											<path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+										</svg>
+									</div>
+									<span class="social-text">Email</span>
+								</a>
+								<a href="https://github.com/fespinoX" target="_blank" class="social-item">
+									<div class="social-square">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+											<path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+											<path d="M9 18c-4.51 2-5-2-7-2"></path>
+										</svg>
+									</div>
+									<span class="social-text">Github</span>
+								</a>
+								<a href="https://www.linkedin.com/in/fespinox/" target="_blank" class="social-item">
+									<div class="social-square">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+											<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+											<rect width="4" height="12" x="2" y="9"></rect>
+											<circle cx="4" cy="4" r="2"></circle>
+										</svg>
+									</div>
+									<span class="social-text">Linkedin</span>
+								</a>
+								<a href="https://instagram.com/fespixels" target="_blank" class="social-item">
+									<div class="social-square">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+											<rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+											<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+											<line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+										</svg>
+									</div>
+									<span class="social-text">Instagram</span>
+								</a>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<p class="page-closure">© 2026 FESPI — DESIGNED &amp; BUILT WITH ♥</p>
+				
+				
+			</div>
+		</section>
+
   	
-		<section id="home">
-			<div class="container">
-				<div class="row align-items-center menu-row">
-					<div class="col text-center">
-						<div class="menu">
-							<ul class="menu-items">
-								<li>
-									<a href="#">Home</a>
-								</li>
-								<li>
-									<a href="#aboutme">About me</a>
-								</li>
-								<li>
-									<a href="#projects">My Work</a>
-								</li>
-								<li>
-									<a href="utilities.html">Utilities</a>
-								</li>
-								<li>
-									<a href="#contact">Get in touch</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="row presentation-row">
-					<div class="col text-center">
-						<h2 class="d-none">Presentation</h2>
-						<p class="cover-name">Fespi.</p>
-						<p class="name-highlight">UI/UX Product Designer</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-
-		<section id="aboutme">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-12 col-lg-4">
-						<img class="fespi-picture" src="img/eu.png" alt="Fespi">
-					</div>
-					<div class="col-12 col-lg-8">
-						
-						<div>
-
-							<h2 class="d-none">About me</h2>
-							
-							<h3 class="title-highlight-dm">Who am I?</h3>
-							<div>
-								<p class="ghost-text">That's a big question! I can start by telling you my name is <span class="text-highlight">Florencia Espino</span>, but most people call me Fespi. I'm a <span class="text-highlight">UI/UX designer</span> based in Buenos Aires, Argentina. I speak <span class="text-highlight">English and Spanish</span> fluently and also some <span class="text-highlight">Portuguese</span>.</p>
-								<p class="ghost-text">I consider myself a big design nerd; <span class="text-highlight">I love design!</span> I'm always getting inspired by art, movies, videogames, boardgames and just life. I have three cats, I love to travel and I spend most of my free time playing boardgames.</p>
-							</div>
-							
-							<h4 class="title-highlight-dm">Experience</h4>
-							<div>
-								<p class="ghost-text">I have more than <span class="text-highlight">13 years of experience</span> working on all kind of projects for clients all over the world. I love a challenge and learning new skills.</p>
-							</div>
-
-							<h4 class="title-highlight-dm">How do I work?</h4>
-							<div>
-								<p class="ghost-text">Whenever I'm starting a new or existing project the first question I ask is <span class="text-highlight">"who are our users?"</span>. My work methodology is to always keep our users in mind and think about how they would interact with our product.</p>
-								<p class="ghost-text">Another important thing about the way I work is that <span class="text-highlight">I consider design as a team sport</span>. I've worked in projects both by myself and with a team and I think the best results are always achieved as a team.</p>
-							</div>
-
-							<h4 class="title-highlight-dm">My background</h4>
-							<div>
-								<p class="ghost-text">I also have a lot of experience working as a <span class="text-highlight">Frontend developer</span>, so I use this knowledge not only to communicate with developers, but also to make life easier for them when I'm designing.</p>
-							</div>
-						</div>
-							
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="projects">
-			<div class="container">
-				<div class="row justify-content-md-center text-center">
-					<div class="col col-md-8">
-						<h2 class="title-highlight-dm">Projects</h2>
-						<div>
-							<p class="easy-eyes">Here you can find information about some of the projects I've worked on.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="project-row mt-5">
-				<div id="projectOne">
-					<a href="projects/designSystems.html" class="project-content" id="projectOneContent">
-						<h3 class="project-name">Design Systems</h3>
-					</a>
-				</div>
-				<div id="projectTwo">
-					<a href="projects/selfServicePlatforms.html" class="project-content" id="projectTwoContent">
-						<h3 class="project-name">Self-service</h3>
-					</a>v4
-
-				</div>
-				<div id="projectThree">
-					<a href="projects/AIprojects.html" class="project-content" id="projectThreeContent">
-						<h3 class="project-name">AI Projects</h3>
-					</a>
-				</div>
-			</div>
-			<div class="project-row">
-				<div id="projectFour">
-					<a href="projects/otherProjects.html" class="project-content-large" id="projectFourContent">
-						<h3 class="project-name">Other Projects</h3>
-					</a>
-				</div>
-			</div>
-		</section>
-
-		<section id="contact">
-			<div class="container">
-				<div class="row justify-content-md-center">
-					<div class="col col-md-8">
-						<div class="contact-info text-center">
-							<h2 class="title-highlight-dm">Want to talk?</h2>
-							<div>
-								<p class="ghost-text">Want to discuss a project, collaborate, talk boardgames or just say hello?</p>
-							</div>
-							<div>
-								<p class="ghost-text">Send me an email to <span class="text-highlight"><a href="mailto:hola@ohno.com.ar">hola@ohno.com.ar</a></span>.</p>
-							</div>
-							<div>
-								<p class="ghost-text">I'd love to hear from you!</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-  	
-  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-	<script src="script/script.js"></script>
-  </body>
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
 </html>
