@@ -147,6 +147,16 @@ body {
 	color: var(--background-color);
 }
 
+.ask-more {
+	display: block;
+	margin: 40px;
+	text-align: center;
+	color: var(--text-sec-color);
+	font-family: var(--pixel-font);
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
 
 /* 
 Cool Sh*t
