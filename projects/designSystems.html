@@ -1,195 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="OHNO! Fespi - UI/UX designer">
 		<meta property="og:description" content="OHNO! Fespi - UI/UX designer">
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="https://www.ohno.com.ar/">
-		<meta property="og:image" content="img/coverimg.png">
+		<meta property="og:image" content="../img/coverimg.png">
 		<link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>OHNO!</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>OHNO! Fespi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="../css/style.css">
-  </head>
-  <body class="projects">
-	  <section class="project-cover" id="projectOneCover">
-		<div class="container">
-			<div class="row align-items-center menu-row">
-				<div class="col text-center">
-					<div class="menu">
-						<ul class="menu-items">
-							<li>
-								<a href="../index.html">Home</a>
-							</li>
-							<li>
-								<a href="../index.html#aboutme">About me</a>
-							</li>
-							<li>
-								<a href="#projects">My Work</a>
-							</li>
-							<li>
-								<a href="../utilities.html">Utilities</a>
-							</li>
-							<li>
-								<a href="../index.html#contact">Get in touch</a>
-							</li>
-						</ul>
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	
+	<h1 class="d-none">Design System Projects</h1>
+		<div class="menu">
+			<div class="container">
+				<ul class="menu-items">
+					<li class="menu-item menu-home">
+						<a class="text-glow-tangerine" href="../index.html#">Fespi</a>
+					</li>
+					<li class="text-center menu-item menu-option">
+						<a href="../index.html#aboutme">About</a>
+					</li>
+					<li class="text-center menu-item menu-option">
+						<a href="../index.html#projects">Projects</a>
+					</li>
+					<li class="text-center menu-item menu-option">
+						<a href="../index.html#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<section class="landing-section">
+			<div class="container projects-main">	
+				<div class="row justify-content-center">
+					<div class="col-12 col-lg-8">
+						<div class="animate-side">
+							<a class="back-button" href="../index.html">
+								◀ Back to Home
+							</a>
+						</div>
+						<div class="project-intro">
+							<h2 class="project-detail-title">
+								Design Systems
+							</h2>
+							<p class="project-detail-description">
+								These are some of the design systems I’ve built from scratch and maintained over time, working closely with developers along the way. Click on any item to explore the design system.
+							</p>
+						</div>
+
+						<div class="accordion pixel-border">
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+								<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									<div class="project-item-title-container">
+										<h3 class="project-item-title">Goldenset</h3><span class="project-tag">2025-2026</span>
+									</div>
+									<div class="project-explanation">
+										<p>A design system built in Figma and synced with React using design tokens</p>
+									</div>
+									<div>
+										<span class="project-tag">Figma</span>
+										<span class="project-tag">Token Studio</span>
+										<span class="project-tag">React</span>
+									</div>
+								</button>
+								</h2>
+								<div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<div class="project-cards row gx-3">
+										<div class="col-12 col-md-4">
+											<div class="project-card h-100">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users w-4 h-4 text-accent shrink-0 mt-0.5">
+													<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+													<circle cx="9" cy="7" r="4"></circle>
+													<path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+													<path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+												</svg>
+												<div>
+													<h3 class="project-card-title">Role</h3>
+													<p class="project-card-value">Lead UI/UX Designer</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-md-4">
+											<div class="project-card h-100">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar w-4 h-4 text-accent shrink-0 mt-0.5"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+												<div>
+													<h3 class="project-card-title">Team</h3>
+													<p class="project-card-value">1 Designer, 5 Devs (3 FE, 2BE)</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-md-4">
+											<div class="project-card h-100">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-accent shrink-0 mt-0.5"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+												<div>
+													<h3 class="project-card-title">Challenge</h3>
+													<p class="project-card-value">Component Synchronization</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<h3 class="project-details-title">// Project Details</h3>
+									<p class="project-details-info">I built this design system from scratch in Figma and worked closely with developers to keep design and code in sync. Using the Tokens Studio for Figma plugin, we translated Figma variables into a JSON file that developers could process to automatically generate CSS variables for the React components. This setup helped keep the system consistent and easier to maintain as it evolved.</p>
+									<div class="project-details-image">
+										<img src="../img/projects/designsystems/nw.png" alt="Screencaptures from a Design System">
+									</div>
+
+									<div class="project-details-link-container">
+										<a href="https://www.figma.com/design/2DZnJD9bVpTOslTxJa0ezN/NW-Design-System?node-id=0-1&t=VRUMrl64mHAnu1tN-1" target="_blank" class="primary-button">NW Design System</a>
+										<div class="animate-side nudge-container">
+											<p class="nudge">
+												◀ Click to see Design System
+											</p>
+										</div>
+									</div>
+									
+								</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+								<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+									<div class="project-item-title-container">
+										<h3 class="project-item-title">Salesforce</h3><span class="project-tag">2024</span>
+									</div>
+									<div class="project-explanation">
+										<p>Worked as part of the design team using and contributing to Salesforce’s Lightning Design System.</p>
+									</div>
+									<div>
+										<span class="project-tag">Figma</span>
+									</div>
+								</button>
+								</h2>
+								<div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<div class="project-cards row gx-3">
+										<div class="col-12 col-md-4">
+											<div class="project-card h-100">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users w-4 h-4 text-accent shrink-0 mt-0.5">
+													<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+													<circle cx="9" cy="7" r="4"></circle>
+													<path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+													<path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+												</svg>
+												<div>
+													<h3 class="project-card-title">Role</h3>
+													<p class="project-card-value">UI/UX Designer</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-md-4">
+											<div class="project-card h-100">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar w-4 h-4 text-accent shrink-0 mt-0.5"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+												<div>
+													<h3 class="project-card-title">Team</h3>
+													<p class="project-card-value">Houndreds of Designers & Devs</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-md-4">
+											<div class="project-card h-100">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-accent shrink-0 mt-0.5"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+												<div>
+													<h3 class="project-card-title">Challenge</h3>
+													<p class="project-card-value">Complex Design Processes</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<h3 class="project-details-title">// Project Details</h3>
+									<p class="project-details-info">As part of the design team, I worked extensively with Salesforce’s Lightning Design System, using it to design consistent product experiences while also contributing back to it. I created new components and updated existing ones when product needs evolved, helping expand and improve the system so it could support new features across the platform.</p>
+									<div class="project-details-image">
+										<img src="../img/projects/designsystems/lightning.png" alt="Screencaptures from a Design System">
+									</div>
+
+									<div class="project-details-link-container">
+										<a href="https://www.lightningdesignsystem.com/" target="_blank" class="primary-button">Lightning Design System</a>
+										<div class="animate-side nudge-container">
+											<p class="nudge">
+												◀ Click to see Design System
+											</p>
+										</div>
+									</div>
+									
+								</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+								<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+									<div class="project-item-title-container">
+										<h3 class="project-item-title">Perceptyx</h3><span class="project-tag">2022-2023</span>
+									</div>
+									<div class="project-explanation">
+										<p>A design system designed in Figma and implemented in Vue.js, where I worked as both designer and frontend developer</p>
+									</div>
+									<div>
+										<span class="project-tag">Figma</span>
+										<span class="project-tag">Vue.js</span>
+									</div>
+								</button>
+								</h2>
+								<div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<div class="project-cards row gx-3">
+										<div class="col-12 col-md-4">
+											<div class="project-card h-100">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users w-4 h-4 text-accent shrink-0 mt-0.5">
+													<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+													<circle cx="9" cy="7" r="4"></circle>
+													<path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+													<path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+												</svg>
+												<div>
+													<h3 class="project-card-title">Role</h3>
+													<p class="project-card-value">UI/UX Designer / FE Dev</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-md-4">
+											<div class="project-card h-100">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar w-4 h-4 text-accent shrink-0 mt-0.5"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+												<div>
+													<h3 class="project-card-title">Team</h3>
+													<p class="project-card-value">3 Designers, 2 FE Devs</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-md-4">
+											<div class="project-card h-100">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-accent shrink-0 mt-0.5"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+												<div>
+													<h3 class="project-card-title">Challenge</h3>
+													<p class="project-card-value">Multi-Role</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<h3 class="project-details-title">// Project Details</h3>
+									<p class="project-details-info">I created this design system from scratch, working both as the designer and frontend developer. The system was designed in Figma and then implemented in Vue.js, building the components directly in code to match the design.</p>
+									<div class="project-details-image">
+										<img src="../img/projects/designsystems/vision.png" alt="Screencaptures from a Design System">
+									</div>
+
+									<div class="project-details-link-container">
+										<a href="https://vision.perceptyx.com/" target="_blank" class="primary-button">Vision Design System</a>
+										<div class="animate-side nudge-container">
+											<p class="nudge">
+												◀ Click to see Design System
+											</p>
+										</div>
+									</div>
+									
+								</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row align-items-center height-100">
-				<div class="col col-xl-8">
-				  <div>
-					<h1 class="project-name">Design Systems</h1>
-				  </div>
-				  <div>
-					<p class="easy-eyes project-description">A design system is a centralized collection of reusable components, patterns, guidelines, and principles that ensure consistency and efficiency in creating cohesive user interfaces and experiences across digital products or platforms.</p>
-				  </div>
-				</div>
-			  </div>
-		</div>
-	</section>
+		</section>
 
-	<section class="project-info">
-	<div class="container">
-			<div class="row">
-				<div class="col-12 col-lg-2 text-end">
-					<h2 class="project-info-title">My role</h2>
-					<ul>
-						<li><p class="ghost-text sick">Research</p></li>
-						<li><p class="ghost-text sick">Design</p></li>
-					</ul>
-					<h2 class="project-info-title">Clients</h2>
-					<div>
-						<p class="ghost-text sick">Argentinean Government</p>
-						<p class="ghost-text sick">Perceptyx</p>
-						<p class="ghost-text sick">Foretrace</p>
-						<p class="ghost-text sick">Airkit</p>
-						<p class="ghost-text sick">Salesforce</p>
-						<p class="ghost-text sick">Other clients</p>
-					</div>
-			</div>
-				<div class="col-12 col-lg-10">
-			<div>					
-						<h2 class="project-info-title">The project</h2>
-						<div>
-							<p class="ghost-text">Throughout my career, I've had the privilege of working on the development and upkeep of comprehensive design systems.</p>
-							<p class="ghost-text">While crafting a design system may initially appear time-intensive, its long-term benefits in efficiency are undeniable.</p>
-							<p class="ghost-text">Design systems play a pivotal role in maintaining visual consistency across various pages and platforms.</p>
-						</div>
-						<h2 class="project-info-title">The team</h2>
-						<div>
-							<p class="ghost-text">The creation and maintanance of design systems is a joint effort between designers and developers, as each component needs to be designed and coded to be reused.</p>
-						</div>
-						<h2 class="project-info-title">The challenge</h2>
-						<div>
-							<p class="ghost-text">Developing a design system presents various challenges. When starting from scratch, anticipation of the necessary components is crucial. Conversely, maintaining an established design system requires meticulous attention to each component to prevent redundancies and uphold consistent principles.</p>
-							<p class="ghost-text">Another significant challenge lies in documentation. It entails thoroughly documenting each component for future reference. While you may be involved in the team responsible for creating a design system, its utilization extends across multiple teams. Thus, comprehensive documentation becomes essential for ensuring that all teams understand how to effectively utilize each component.</p>
-						</div>
-			</div>
-			</div>
-		</div>
-	</div>
-	</section>
-
-	<section  class="project-image" id="projectOneImage">
-		<p class="d-none">Vision Design System images</p>
-	</section>
-
-	<section class="project-data">
-		<div class="container">
-			<div class="row justify-content-md-center">
-				<div class="col-12 col-lg-8">
-					<div>
-						<h2 class="project-data-title">Experience</h2>
-					</div>
-					<div class="project-block">
-						<div>
-							<h3 class="project-data-subtitle">Poncho</h3>
-						</div>
-						<div>
-							<p class="ghost-text">Poncho serves as the design system for the Argentinean Government, representing my inaugural venture into this domain. Remarkably, it stands as the most extensively utilized design system across numerous pages.</p>
-							<p class="ghost-text">Poncho finds its application on the official country website (argentina.gob.ar), as well as throughout various governmental applications.</p>
-							<a href="https://argob.github.io/poncho/" class="project-link">Poncho documentation</a>
-						</div>
-					</div>
-					<div class="project-block">
-						<div>
-							<h3 class="project-data-subtitle">Vision</h3>
-						</div>
-						<div>
-							<p class="ghost-text">Vision serves as the design system utilized in all Perceptyx products. With multiple platforms available to clients, I contributed to the team responsible for developing this system for universal application across all platforms.</p>
-							<a href="https://vision.perceptyx.com/" class="project-link">Vision documentation</a>
-						</div>
-					</div>
-					<div class="project-block">
-						<div>
-							<h3 class="project-data-subtitle">Nimbus Kit</h3>
-						</div>
-						<div>
-							<p class="ghost-text">With the introduction of AI into Airkit, we saw an opportune moment to craft a design system that embraced this modernization. Thus, Nimbus Kit came into existence.</p>
-						</div>
-					</div>
-					<div class="project-block">
-						<div>
-							<h3 class="project-data-subtitle">Other design systems</h3>
-						</div>
-						<div>
-							<p class="ghost-text">After handling numerous freelance design projects, I consistently advocate for the implementation of a design system when conceptualizing a new product for my clients. I believe this step is essential to ensure platform cohesion, particularly when multiple design teams are involved in their development.</p>
-						</div>
-					</div>					
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="projects">
-		<div class="container">
-			<div class="row justify-content-md-center text-center">
-				<div class="col col-lg-8">
-					<h2 class="title-highlight-dm">Projects</h2>
-					<div>
-						<p class="easy-eyes">Here you can find information about some of the projects I've worked on.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="project-row mt-5">
-			<div id="projectOne">
-				<a href="designSystems.html" class="project-content" id="projectOneContent">
-					<h3 class="project-name">Design Systems</h3>
-				</a>
-			</div>
-			<div id="projectTwo">
-				<a href="selfServicePlatforms.html" class="project-content" id="projectTwoContent">
-					<h3 class="project-name">Self-service</h3>
-				</a>v4
-				
-			</div>
-			<div id="projectThree">
-				<a href="AIprojects.html" class="project-content" id="projectThreeContent">
-					<h3 class="project-name">AI Projects</h3>
-				</a>
-			</div>
-		</div>
-		<div class="project-row">
-			<div id="projectFour">
-				<a href="otherProjects.html" class="project-content-large" id="projectFourContent">
-					<h3 class="project-name">Other Projects</h3>
-				</a>
-			</div>
-		</div>
-	</section>
-  	
-  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-	  <script src="../script/script.js"></script>
-  </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
 </html>
